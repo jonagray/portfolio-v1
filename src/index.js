@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 
+// styles
 import "assets/scss/material-kit-react.scss?v=1.9.0";
 
 // pages for this product
@@ -20,9 +21,7 @@ var hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
       <Route path="/employee-manager-page" component={EmployeeManagerPage} />
       <Route path="/code-parallaxis-page" component={CodeParallaxisPage} />
       <Route path="/fmla-leave-page" component={FmlaLeavePage} />

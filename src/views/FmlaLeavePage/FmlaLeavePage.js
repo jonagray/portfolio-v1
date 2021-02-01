@@ -1,10 +1,6 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.js";
@@ -15,14 +11,14 @@ import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import "assets/css/fmla.css";
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
-
-// Sections for this page
+// section components
 import ProductSection from "./Sections/ProductSection.js";
 import SectionCarousel from "./Sections/SectionCarousel.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
+// styles
+import "assets/css/fmla.css";
+import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 const dashboardRoutes = [];
 
@@ -53,17 +49,6 @@ export default function LandingPage(props) {
               <h4>
                 A multi-user, secure portal for employees to visualize and modify hours of leave protected under the Family and Medical Leave Act.
               </h4>
-              {/* <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button> */}
             </GridItem>
           </GridContainer>
         </div>

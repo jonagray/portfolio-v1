@@ -1,23 +1,23 @@
 import React from "react";
-// react component for creating beautiful carousel
 import Carousel from "react-slick";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
+// images
 import image1 from "assets/img/fmla-leave.png";
 import image2 from "assets/img/fmla-hours.png";
 import image3 from "assets/img/fmla-summary.png";
 import image4 from "assets/img/fmla-calculator.png";
+
+//styles
 import "assets/css/custom-headers.css";
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
-// 88191, 21931, 94331, 87385
+// Badge numbers - 88191, 21931, 94331, 87385
 
 const useStyles = makeStyles(styles);
 
@@ -44,31 +44,18 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      Login Page
-                    </h4>
-                  </div> */}
                 </div>
+
                 <div>
                   <img
                     src={image2}
                     alt="Second slide"
                     className="slick-image"
                   />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      Dashboard
-                    </h4>
-                  </div> */}
                 </div>
+
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      Summary of Changes
-                    </h4>
-                  </div> */}
                 </div>
 
                 <div>
@@ -77,11 +64,6 @@ export default function SectionCarousel() {
                     alt="Fourth slide"
                     className="slick-image"
                   />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      Calculator
-                    </h4>
-                  </div> */}
                 </div>
               </Carousel>
             </Card>

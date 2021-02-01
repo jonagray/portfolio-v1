@@ -1,24 +1,19 @@
 import React from "react";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "components/CustomButtons/Button.js";
+import { Icon, InlineIcon } from '@iconify/react';
 
-
-// @material-ui/icons
-import Face from "@material-ui/icons/Face";
-import Chat from "@material-ui/icons/Chat";
-import Build from "@material-ui/icons/Build";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
-
 import LanguageIcon from '@material-ui/icons/Language';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
 import StorageIcon from '@material-ui/icons/Storage';
 import DnsIcon from '@material-ui/icons/Dns';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
+// fontawesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { faSwift } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +27,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
 import { faTable } from "@fortawesome/free-brands-svg-icons";
 
-import { Icon, InlineIcon } from '@iconify/react';
+// simpleicons
 import reduxIcon from '@iconify-icons/simple-icons/redux';
 import nextDotJs from '@iconify-icons/simple-icons/next-dot-js';
 import jqueryIcon from '@iconify-icons/simple-icons/jquery';
@@ -50,8 +45,7 @@ import bootstrapIcon from '@iconify-icons/simple-icons/bootstrap';
 import digitaloceanIcon from '@iconify-icons/simple-icons/digitalocean';
 import nodeDotJs from '@iconify-icons/simple-icons/node-dot-js';
 
-
-
+// styles
 import styles from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.js";
 import "../../../assets/css/custom-headers.css";
 import '../../../assets/css/icons.css';
@@ -95,26 +89,6 @@ export default function SectionTabs() {
                           <p className="specialty-text">CSS</p>
                         </div>
                       </div>
-                      // <GridContainer display="flex" flex-direction="row" justify="center">
-                      //   <GridItem xs={6} sm={6} md={6}>
-                      //   <FontAwesomeIcon icon={faJsSquare} className="specialty-icons" />
-                      //   <h2>JavaScript</h2>
-                      //   <Button color="github" simple>
-                      //       Swift
-                      //   </Button>
-                      //   </GridItem>
-                      // </GridContainer>
-
-                      // <p className={classes.textCenter}>
-                      //   I think that’s a responsibility that I have, to push
-                      //   possibilities, to show people, this is the level that
-                      //   things could be at. So when you get something that has
-                      //   the name Kanye West on it, it’s supposed to be pushing
-                      //   the furthest possibilities. I will be the leader of a
-                      //   company that ends up being worth billions of dollars,
-                      //   because I got the answers. I understand culture. I am
-                      //   the nucleus.
-                      // </p>
                     )
                   },
                   {
@@ -237,62 +211,6 @@ export default function SectionTabs() {
               />
               </div>
             </GridItem>
-            {/* <GridItem xs={12} sm={12} md={6}>
-              <h3>
-                <small>Tabs on Plain Card</small>
-              </h3>
-              <CustomTabs
-                plainTabs
-                headerColor="danger"
-                tabs={[
-                  {
-                    tabName: "Home",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "Updates",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. I will be the leader of a company
-                        that ends up being worth billions of dollars, because I
-                        got the answers. I understand culture. I am the nucleus.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "History",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  }
-                ]}
-              />
-            </GridItem> */}
           </GridContainer>
         </div>
       </div>

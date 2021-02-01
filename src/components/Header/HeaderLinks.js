@@ -1,8 +1,6 @@
-/*eslint-disable*/
 import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
-// react components for routing our app without refresh
 import { Link } from "react-router-dom";
 
 // @material-ui/core components
@@ -18,6 +16,7 @@ import { Apps, CloudDownload, Info } from "@material-ui/icons";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
+// styles
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -71,11 +70,6 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
           title="View my LinkedIn"
@@ -113,17 +107,16 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="About"
+          title="About me"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
             href="/profile-page"
-            // target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fa fa-info"} />
+            <i className={classes.socialIcons + " fa fa-user"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -138,7 +131,6 @@ export default function HeaderLinks(props) {
           <Button
             color="transparent"
             href="mailto:jon.a.graybill@gmail.com?subject=Mail from Portfolio Site"
-            // target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " far fa-envelope"} />

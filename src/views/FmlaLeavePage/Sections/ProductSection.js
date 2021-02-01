@@ -2,20 +2,18 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
-
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+// icons
 import IconSql from "components/CustomIcons/SqlIcon";
 import IconSheets from "components/CustomIcons/SheetsIcon";
 import IconJquery from "components/CustomIcons/JqueryIcon.js";
+
+// styles
+import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -27,7 +25,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Project Technologies</h2>
           <h5 className={classes.description}>
-            Although dated now, the FMLA Leave Assistant was one of the very first projects I completed while learning how to program, and I am still quite proud of how it turned out. This web application served as proof-of-concept for a real-world project I developed to boost efficiency and data-accuracy. It routinely reduced my team and I's pay-adjustment workload by roughly 20%.
+            FMLA Leave Assistant was one of the very first projects I completed while learning how to program, and I am still quite proud of how it turned out. This web application served as proof-of-concept for a real-world project I developed to boost efficiency and data-accuracy. It routinely reduced my team and I's pay-adjustment workload by roughly 20%.
           </h5>
         </GridItem>
       </GridContainer>
