@@ -1,22 +1,18 @@
 import React from "react";
-// react components for routing our app without refresh
 import { Link } from "react-router-dom";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-
-import landing from "assets/img/landing.jpg";
 import profile from "assets/img/profile.jpg";
 import fmla from "assets/img/fmla-leave.png";
 import codeparallaxis from "assets/img/codeparallaxis.png";
 import lmsportal from "assets/img/lms-portal.png";
 import employeemanager from "assets/img/employee-manager.png";
 
+// styles
 import "assets/css/grid-images.css";
 import "../../../assets/css/custom-headers.css";
 import styles from "assets/jss/material-kit-react/views/componentsSections/exampleStyle.js";

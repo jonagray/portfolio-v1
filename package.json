@@ -1,8 +1,9 @@
 {
-  "name": "material-kit-react",
+  "homepage": "http://jonagray.github.io/portfolio-v1",
+  "name": "portfolio-v1",
   "version": "1.9.0",
-  "description": "Material Kit React. Coded by Creative Tim",
-  "private": true,
+  "description": "",
+  "private": false,
   "main": "src/index.js",
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.12",
@@ -40,6 +41,7 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-react": "7.20.0",
+    "gh-pages": "^3.1.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
     "prettier": "2.0.5"
@@ -48,8 +50,10 @@
     "typescript": "3.9.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
