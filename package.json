@@ -1,5 +1,4 @@
 {
-  "homepage": "http://jonagray.github.io/portfolio-v1",
   "name": "portfolio-v1",
   "version": "1.9.0",
   "description": "",
@@ -50,8 +49,6 @@
     "typescript": "3.9.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
