@@ -1,0 +1,10 @@
+.appetize-container > iframe {
+  padding-top: 50px;
+  border: none;
+}
+
+.appetize-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -75px;
+}

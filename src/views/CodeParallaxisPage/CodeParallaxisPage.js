@@ -20,6 +20,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
 import SectionCarousel from "./Sections/SectionCarousel.js";
+import SectionDownload from "./Sections/SectionDownload.js";
 
 
 
@@ -60,6 +61,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <SectionCarousel />
+          <SectionDownload />
         </div>
       </div>
       <Footer />

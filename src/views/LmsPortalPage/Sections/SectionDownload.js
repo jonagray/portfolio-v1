@@ -7,6 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // core components
+
 import styles from "assets/jss/material-kit-react/views/componentsSections/downloadStyle.js";
 import "assets/css/custom-headers.css";
 
@@ -19,10 +20,7 @@ export default function SectionDownload() {
       <div className={classes.container}>
         <GridContainer className={classes.textCenter} justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2>Feel free to reach out</h2>
-            <h4 className="download-end">
-              Other projects can be found on my Github.
-            </h4>
+            <h2 className="section-download-header">Links</h2>
           </GridItem>
         </GridContainer>
 
@@ -85,12 +83,15 @@ export default function SectionDownload() {
           {/* <GridContainer justify="center">
             <h3>Thank you for supporting us!</h3>
           </GridContainer> */}
-          <Button color="github" target="_blank" href="https://github.com/jonagray">
+          <Button color="primary" href="/">
+            <i className={classes.socials + " fas fa-home"} /> Home
+          </Button>
+          <Button color="github" target="_blank" href="https://github.com/jonagray/LMS_System-Demo">
             <i className={classes.socials + " fab fa-github"} /> Github
           </Button>
-          <Button color="rose" href="mailto:jon.a.graybill@gmail.com?subject=Mail from Portfolio Site">
-            <i className={classes.socials + " far fa-envelope"} /> Email
-          </Button>
+          {/* <Button color="info" target="_blank" href="https://codeparallaxis.com">
+            <i className={classes.socials + " fas fa-external-link-alt"} /> Demo
+          </Button> */}
           {/* <Button color="facebook">
             <i className={classes.socials + " fab fa-facebook-square"} /> Email
           </Button> */}

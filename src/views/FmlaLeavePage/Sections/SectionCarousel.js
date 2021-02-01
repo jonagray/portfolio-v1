@@ -14,8 +14,10 @@ import image1 from "assets/img/fmla-leave.png";
 import image2 from "assets/img/fmla-hours.png";
 import image3 from "assets/img/fmla-summary.png";
 import image4 from "assets/img/fmla-calculator.png";
-
+import "assets/css/custom-headers.css";
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
+
+// 88191, 21931, 94331, 87385
 
 const useStyles = makeStyles(styles);
 
@@ -33,19 +35,20 @@ export default function SectionCarousel() {
     <div className={classes.section}>
       <div className={classes.container}>
       <div className={classes.title}>
-          <h2>Featured Projects</h2>
+          <h6 className="carousel-header">Note: Login requires a valid badge number - some options are listed below (no password needed):</h6>
+          <p className="carousel-header-text">88191, 21931, 94331, 87385</p>
         </div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+          <GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Login Page
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img
@@ -53,20 +56,19 @@ export default function SectionCarousel() {
                     alt="Second slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
-                      {/* <LocationOn className="slick-icons" /> */}
                       Dashboard
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Summary of Changes
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div>
@@ -75,11 +77,11 @@ export default function SectionCarousel() {
                     alt="Fourth slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Calculator
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
               </Carousel>
             </Card>

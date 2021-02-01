@@ -36,16 +36,16 @@ export default function SectionCarousel() {
           <h2>Featured Projects</h2>
         </div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+          <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Login Page
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img
@@ -53,20 +53,19 @@ export default function SectionCarousel() {
                     alt="Second slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
-                      {/* <LocationOn className="slick-icons" /> */}
                       Admin Dashboard
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Create a New Post Page
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div>
@@ -75,11 +74,11 @@ export default function SectionCarousel() {
                     alt="Fourth slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       Signup Page
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
               </Carousel>
             </Card>

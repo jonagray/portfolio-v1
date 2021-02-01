@@ -6,3 +6,22 @@
 .download-end {
   margin-bottom: -50px;
 }
+
+.section-download-header {
+  color: #3c4858;
+  margin-bottom: -50px !important;
+  /* margin-top: -50px !important; */
+}
+
+.carousel-header {
+  color: #3c4858;
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.carousel-header-text {
+  color: #3c4858;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -30px;
+}

@@ -11,7 +11,11 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
+
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import IconSql from "components/CustomIcons/SqlIcon";
+import IconSheets from "components/CustomIcons/SheetsIcon";
+import IconJquery from "components/CustomIcons/JqueryIcon.js";
 
 const useStyles = makeStyles(styles);
 
@@ -23,11 +27,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Project Technologies</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Although dated now, the FMLA Leave Assistant was one of the very first projects I completed while learning how to program, and I am still quite proud of how it turned out. This web application served as proof-of-concept for a real-world project I developed to boost efficiency and data-accuracy. It routinely reduced my team and I's pay-adjustment workload by roughly 20%.
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,27 +35,27 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="PostgreSQL"
+              description="Project utilized a PostgreSQL database on the back-end. This was due to strict requirements for formatted data input, in addition to being a learning opportunity."
+              icon={IconSql}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="jQuery"
+              description="Front-end framework jQuery allowed for simple construction of pre-determined wireframes. It also served as an introduction to JavaScript libraries."
+              icon={IconJquery}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Google Sheets API"
+              description="Unique project requirements defined a need for use of data manipulation from an Excel-style sheet workbook. Google's Sheets API fulfilled this need perfectly."
+              icon={IconSheets}
               iconColor="danger"
               vertical
             />

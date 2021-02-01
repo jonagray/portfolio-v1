@@ -16,11 +16,12 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Video from "components/VideoPlayer/VideoPlayer.js"
 import Appetize from "components/Appetize/Appetize.js";
-
+import "assets/css/appetize.css";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
+import SectionDownload from "./Sections/SectionDownload.js";
 // import SectionCarousel from "./Sections/SectionCarousel.js";
 
 
@@ -52,10 +53,7 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Employee Manager Mobile Application</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                A React Native application built to demonstrate CRUD functionality for a managers' need to schedule and contact employees.
               </h4>
               <br />
               {/* <Button
@@ -75,8 +73,11 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <Appetize />
           <ProductSection />
+          <div className="appetize-container">
+          <Appetize />
+          </div>
+          <SectionDownload />
         </div>
       </div>
       <Footer />

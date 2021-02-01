@@ -15,13 +15,12 @@ import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Video from "components/VideoPlayer/VideoPlayer.js"
-
+import "assets/css/video.css";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
-
+import SectionDownload from "./Sections/SectionDownload.js";
 
 
 const dashboardRoutes = [];
@@ -51,10 +50,7 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>LMS Portal</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                A Learning Management System Portal, designed in less than 24 hours as proof-of-concept for a small business.
               </h4>
               <br />
               {/* <Button
@@ -74,8 +70,11 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <Video />
           <ProductSection />
+          <div className="video-container">
+          <Video />
+          </div>
+          <SectionDownload />
         </div>
       </div>
       <Footer />
