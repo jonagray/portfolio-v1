@@ -31,7 +31,7 @@ export default function SectionExamples() {
           <div id="nav-tabs">
             <GridContainer justify="space-between" direction="row" alignContent="center" alignItems="stetch" className="grid-images-container">
 
-              <GridItem xs={12} sm={12} md={6} className="grid-images">
+              <GridItem xs={12} sm={6} md={6} lg={5} className="grid-images">
                 <Link to="code-parallaxis-page" className={classes.link}>
                   <img
                     src={codeparallaxis}
@@ -50,7 +50,7 @@ export default function SectionExamples() {
                 </Link>
               </GridItem>
 
-              <GridItem xs={12} sm={12} md={6} className="grid-images">
+              <GridItem xs={12} sm={6} md={6} lg={5} className="grid-images">
                 <Link to="employee-manager-page" className={classes.link}>
                   <img
                     src={employeemanager}
@@ -69,7 +69,7 @@ export default function SectionExamples() {
                 </Link>
               </GridItem>
 
-              <GridItem xs={12} sm={12} md={6} className="grid-images">
+              <GridItem xs={12} sm={6} md={6} lg={5} className="grid-images">
                 <Link to="lms-portal-page" className={classes.link}>
                   <img
                     src={lmsportal}
@@ -82,13 +82,13 @@ export default function SectionExamples() {
                       classes.imgFluid
                     }
                   />
-                  <Button color="github" size="lg" default className="grid-buttons2">
-                    LMS Portal
+                  <Button color="github" size="lg" default className="grid-buttons">
+                    Learning Management
               </Button>
                 </Link>
               </GridItem>
 
-              <GridItem xs={12} sm={12} md={6} className="grid-images">
+              <GridItem xs={12} sm={6} md={6} lg={5} className="grid-images">
                 <Link to="fmla-leave-page" className={classes.link}>
                   <img
                     src={fmla}
@@ -101,7 +101,7 @@ export default function SectionExamples() {
                       classes.imgFluid
                     }
                   />
-                  <Button color="github" size="lg" default className="grid-buttons2">
+                  <Button color="github" size="lg" default className="grid-buttons">
                     Metro Leave Assistant
               </Button>
                 </Link>
