@@ -1,53 +1,58 @@
-.specialty-icons {
-  font-size: 60px;
-  align-self: center;
-  margin-right: 5px;
+/* around the white boxes */
+.wrapper > * > :first-child {
+  /* border: solid 1px red; */
 }
 
-.specialty-text {
-  /* border: 1px solid red !important; */
-  font-size: 16px;
-  align-self: flex-end;
-  font-weight: bold;
+/* around the entire grid item (yellow) */
+.wrapper > :first-child {
+  /* border: solid 1px red; */
 }
 
-.specialty-container {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-wrap: nowrap;
-  /* justify-content: space-around; */
-  /* align-content: center; */
-}
-
-.specialty-items-1 {
-  /* border: 1px solid red; */
-  display: flex;
-  width: 32%;
-  height: 100px;
-  margin-bottom: 2%;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
-.specialty-items-2 {
-  /* border: 1px solid red; */
-  display: flex;
-  width: 67%;
-  height: 100px;
-  margin-bottom: 2%;
-  padding-left: 25px;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
-.specialty-icons2 {
-  height: 70px;
-  margin-right: -10px;
-}
-
-.main-icons2 > * > :first-child {
-  /* border: 1px solid red !important; */
+/* around yellow header items */
+.wrapper > :first-child > * > :first-child > * > * {
+  /* border: solid 1px red; */
   display: flex;
   justify-content: center;
 }
 
+/* around the entire grid item (blue) */
+.wrapper > :last-child {
+  /* border: solid 1px blue; */
+}
+
+/* around blue header items */
+.wrapper > :last-child > * > :first-child > * > * {
+  /* border: solid 1px blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.inner-grid-container {
+  /* border: solid 1px green; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.grid1 {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+}
+
+.icon1 {
+  /* border: 2px solid orange; */
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+.specialty-text {
+  /* border: 2px solid greenyellow; */
+  height: 100%;
+  padding-left: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}

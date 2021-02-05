@@ -26,10 +26,6 @@ import IconMongodb from "components/CustomIcons/MongodbIcon";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
-{/* <Icon icon={netlifyIcon} className="specialty-items-1 specialty-icons" /> */}
-{/* <FontAwesomeIcon icon={faNode} className="specialty-items-1 specialty-icons" /> */}
-
-
 const useStyles = makeStyles(styles);
 
 export default function ProductSection() {
