@@ -238,7 +238,7 @@ export default function SectionTabs() {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <CustomTabs
-                headerColor="info"
+                headerColor="primary"
                 tabs={[
                   {
                     tabName: "Back-ends",

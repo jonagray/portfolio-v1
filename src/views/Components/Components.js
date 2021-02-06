@@ -16,7 +16,6 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionTabs from "./Sections/SectionTabs.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
-import SectionPills from "./Sections/SectionPills.js";
 
 // styles
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -57,7 +56,6 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        {/* <SectionPills /> */}
         <SectionTabs />
         <SectionExamples />
         <SectionDownload />

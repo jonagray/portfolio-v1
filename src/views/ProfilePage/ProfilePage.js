@@ -86,7 +86,7 @@ export default function ProfilePage(props) {
               <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="warning"
+                  color="info"
                   tabs={[
                     {
                       tabButton: "Background",
