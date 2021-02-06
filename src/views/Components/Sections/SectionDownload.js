@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 // @material-ui/icons
 import GridContainer from "components/Grid/GridContainer.js";
@@ -26,13 +27,15 @@ export default function SectionDownload() {
           </GridItem>
         </GridContainer>
         <div className={classes.textCenter + " " + classes.sharingArea}>
-          <Button color="primary" href="/profile-page">
-            <i className={classes.socials + " far fa-user"} /> About
-          </Button>
+          <Link to="/profile-page">
+            <Button color="info" >
+              <i className={classes.socials + " far fa-user"} /> About
+            </Button>
+          </Link>
           <Button color="github" target="_blank" href="https://github.com/jonagray">
             <i className={classes.socials + " fab fa-github"} /> Github
           </Button>
-          <Button color="info" href="mailto:jon.a.graybill@gmail.com?subject=Mail from Portfolio Site">
+          <Button color="primary" href="mailto:jon.a.graybill@gmail.com?subject=Mail from Portfolio Site">
             <i className={classes.socials + " far fa-envelope"} /> Email
           </Button>
         </div>

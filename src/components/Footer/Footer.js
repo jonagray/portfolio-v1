@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 // material-ui core components
 import { List, ListItem } from "@material-ui/core";
@@ -36,12 +37,9 @@ export default function Footer(props) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="/profile-page"
-                className={classes.block}
-              >
+              <Link to="/profile-page" className={classes.block}>
                 About
-              </a>
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a

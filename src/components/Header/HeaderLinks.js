@@ -18,6 +18,7 @@ import Button from "components/CustomButtons/Button.js";
 
 // styles
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import "assets/css/icons.css";
 
 const useStyles = makeStyles(styles);
 
@@ -38,24 +39,15 @@ export default function HeaderLinks(props) {
             <Link to="/code-parallaxis-page" className={classes.dropdownLink}>
               Code Parallaxis
             </Link>,
-            <a
-              href="/employee-manager-page"
-              className={classes.dropdownLink}
-            >
+            <Link to="/employee-manager-page" className={classes.dropdownLink}>
               Employee Manager
-            </a>,
-            <a
-              href="/lms-portal-page"
-              className={classes.dropdownLink}
-            >
+            </Link>,
+            <Link to="/lms-portal-page" className={classes.dropdownLink}>
               LMS Portal
-                      </a>,
-            <a
-              href="/fmla-leave-page"
-              className={classes.dropdownLink}
-            >
+            </Link>,
+            <Link to="/fmla-leave-page" className={classes.dropdownLink}>
               Metro Leave Assistant
-                                </a>,
+            </Link>,
           ]}
         />
       </ListItem>
@@ -111,13 +103,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            color="transparent"
-            href="/profile-page"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fa fa-user"} />
-          </Button>
+          <Link to="/profile-page">
+            <Button
+              color="transparent"
+              className={classes.navLink}           
+            >
+              <i className={classes.socialIcons + " fa fa-user"} id="about-me" />
+            </Button>
+          </Link>
         </Tooltip>
       </ListItem>
 

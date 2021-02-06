@@ -23,13 +23,13 @@ export default function SectionDownload() {
           </GridItem>
         </GridContainer>
         <div className={classes.textCenter + " " + classes.sharingArea}>
-          <Button color="primary" href="/">
+          <Button color="rose" href="/">
             <i className={classes.socials + " fas fa-home"} /> Home
           </Button>
           <Button color="github" target="_blank" href="https://github.com/fmla-leave-assistant/fmla-leave-assistant">
             <i className={classes.socials + " fab fa-github"} /> Github
           </Button>
-          <Button color="info" target="_blank" href="http://jala-leave.xyz">
+          <Button color="primary" target="_blank" href="http://jala-leave.xyz">
             <i className={classes.socials + " fas fa-external-link-alt"} /> Demo
           </Button>
         </div>
