@@ -39,6 +39,7 @@ import sassIcon from '@iconify-icons/simple-icons/sass';
 import amazonawsIcon from '@iconify-icons/simple-icons/amazonaws';
 import githubIcon from '@iconify-icons/simple-icons/github';
 import npmIcon from '@iconify-icons/simple-icons/npm';
+import amazondynamodbIcon from '@iconify-icons/simple-icons/amazondynamodb';
 
 // styles
 import styles from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.js";
@@ -151,6 +152,15 @@ export default function SectionTabs() {
                             </div>
                             <div>
                               <p className="specialty-text">JSON</p>
+                            </div>
+                          </div>
+
+                          <div className="grid1">
+                            <div>
+                              <Icon icon={amazondynamodbIcon} className="icon1" />
+                            </div>
+                            <div>
+                              <p className="specialty-text">DynamoDB</p>
                             </div>
                           </div>
                         </GridItem>
